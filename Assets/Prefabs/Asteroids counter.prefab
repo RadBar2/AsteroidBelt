@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 858089690594427919}
   - component: {fileID: 858089690594427905}
   - component: {fileID: 858089690594427918}
-  - component: {fileID: 7706033664891480085}
+  - component: {fileID: -1315330221543695063}
   m_Layer: 5
   m_Name: Asteroids counter
   m_TagString: Counter
@@ -32,7 +32,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -136,7 +135,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7706033664891480085
+--- !u!114 &-1315330221543695063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

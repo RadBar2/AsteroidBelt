@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System;
 
 public class Timer : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class Timer : MonoBehaviour
     void Update()
     {
         elapsedTime = Time.time - startTime;
-        timer.text = $"{Math.Floor(elapsedTime / 60)}:{Math.Floor(elapsedTime)}:{Math.Floor((elapsedTime - Math.Truncate(elapsedTime))*1000)}";
+        timer.text = $"{Mathf.Floor(elapsedTime / 60)}:{Mathf.Floor(elapsedTime % 60)}:{Mathf.Floor((elapsedTime - (int)(elapsedTime))*1000)}";
     }
 }
 

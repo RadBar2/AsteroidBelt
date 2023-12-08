@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     public float spawnRate = 1;
 
+    public GameObject Portal;
     private void Start()
     {
         InvokeRepeating(nameof(SpawnObstacle), 0, spawnRate);
@@ -25,6 +26,7 @@ public class Spawner : MonoBehaviour
 
         position = transform.position;
         position.y = Random.Range(-5, 5);
+        if (Portal.activeSelf) position.x = 7;
 
         Instantiate(prefab, position, transform.rotation);
     }

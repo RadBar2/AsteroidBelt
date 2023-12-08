@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6211317392210892021}
   - component: {fileID: 6812115198031540346}
-  - component: {fileID: 1078427734379001647}
   - component: {fileID: -3012727942799961502}
   - component: {fileID: -3014623232949574798}
+  - component: {fileID: -8989027939040490504}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Projectile
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70917463, w: 0.70503294}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 5, z: 5}
+  m_LocalScale: {x: 4.836858, y: 3.4312499, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1078427734379001647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3551867165343274851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5744087ff8ef0648a66492f4a66af53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50
-  lifetime: 30
 --- !u!68 &-3012727942799961502
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -169,3 +155,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8989027939040490504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551867165343274851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5744087ff8ef0648a66492f4a66af53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: {fileID: 0}
+  speed: 20000
+  lifetime: 1

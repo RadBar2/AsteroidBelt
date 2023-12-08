@@ -11,5 +11,9 @@ public class Teleporter : MonoBehaviour
         {
             SceneManager.LoadScene("Ending");
         }
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

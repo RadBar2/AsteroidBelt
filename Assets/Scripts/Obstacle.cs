@@ -5,8 +5,6 @@ using UnityEngine.UIElements;
 
 public class Obstacle : MonoBehaviour
 {
-    public GameObject smallAsteroid;
-    bool isCreated = false;
     public float speed = 1000;
 
     void Update()
@@ -21,19 +19,5 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Projectile"))
-        {
-            Destroy(this);
-            if (smallAsteroid != null && !isCreated)
-            {
-                Instantiate(smallAsteroid, transform.position, transform.rotation);
-                isCreated = true;
-            }
-            
-           
-        }
-    }
 }
 

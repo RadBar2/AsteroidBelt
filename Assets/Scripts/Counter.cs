@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Counter : MonoBehaviour
@@ -9,9 +10,13 @@ public class Counter : MonoBehaviour
     public TMP_Text scoreText;
     public int score = 0;
 
-    void Update()
+    public void Start()
     {
-        scoreText.text = $"Asteroids shot: {score}/10";
-        if (score == 10) Portal.SetActive(true);
+        // Portal = GetComponent<GameObject>();
+    }
+
+    public void Update()
+    {
+        if (score >= 10) Portal.SetActive(true);
     }
 }
